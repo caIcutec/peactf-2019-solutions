@@ -14,7 +14,6 @@ The chief problem with finding the flag in the directory is that there are many
 folders with long, hard-to-type names. While using tab completion may speed up
 the process of going to each folder, we can easily search all the folders with:
 > $grep -r flag
-The flag will appear, alongside the path it took to reach it.
 
 ### Flag
 flag{peactf_linux_is_fun_b69edd92bd15244b7ad0c9242b065b84}
