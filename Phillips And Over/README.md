@@ -15,8 +15,8 @@ there is a hidden third field called 'debug', with value 0. Using a server state
 editor, we can change our POST request to have a 'debug' value of 1. Doing so 
 shows us an underlying SQL query being called. 
 
->username: blah
-answer: blah
+>username: blah  
+answer: blah  
 SQL query: SELECT password, answer FROM users WHERE username='blah'
 
 While it would be wonderful to know an existing username / answer pair to write
