@@ -1,26 +1,12 @@
 <?php
 
-class Injection
-{
-    public function __construct($username){
-        $this->user = 'admin';
+class User{
+    public $admin = true;
+    public function is_admin(){
+        return $admin;
     }
-
-    public function __wakeup(){
-        $this->user = 'admin';
-    }
-
 }
 
-$ex = new Injection('admin');
-$str = serialize($ex);
-echo $str;
-
-$user = unserialize($str);
-
-    if ($user->user =='admin') {
-        echo "gamers";
-    } else {echo "Permission Denied";
-    }
-
+$admin = new User();
+echo urlencode(serialize($admin));
 ?>
